@@ -35,7 +35,7 @@ module.exports = async function (width) {
 
 for ( jj = 0; jj < 15; jj++) {
 
-    const stX = 40;
+    const stX = 90;
     const stY = 100 + jj* (25);
     const LtNum = 20;
 
