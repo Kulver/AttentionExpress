@@ -60,11 +60,17 @@ module.exports = async function (useImages, width, height) {
     //     .fontSize(17)
     //     .text("20%", 305, 150);
 
-    var stratX = 60;
+    //var stratX = 60;
+    
+
     var startY = 90;
     var offset = 5;
 
     var A4W = 595
+    
+    var stratX = ( A4W  - width * (40 + offset) ) / 2  - 20;
+
+    
     var allLN = filteredImgs.length;
     var stX = A4W / 2 - allLN * (imgW + offset) / 2;
     console.log('A4W:', A4W / 2);
