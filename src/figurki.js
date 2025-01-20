@@ -60,7 +60,7 @@ module.exports = async function (useImages, width, height) {
     //     .fontSize(17)
     //     .text("20%", 305, 150);
 
-    var stratX = 40;
+    var stratX = 60;
     var startY = 90;
     var offset = 5;
 
@@ -85,7 +85,7 @@ module.exports = async function (useImages, width, height) {
 
     for (var j = 0; j < height; j++) {
       for (var i = 0; i < width; i++) {
-        pdfDoc.image(filteredImgs[Math.floor(prng() * filteredImgs.length)], stratX + i * imgW + i * offset, startY + j * imgH + j * offset, {fit: [45, 45]});
+        pdfDoc.image(filteredImgs[Math.floor(prng() * filteredImgs.length)], stratX + i * imgW + i * offset, startY + j * imgH + j * offset, {fit: [40, 40]});
       }
 
     }
